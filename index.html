@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./icons/camera-icon.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body onload="renderPosts()">
+        <header>
+            <div class="header-content">
+                <a class="page-headline" href="index.html">Instagram</a>
+                <input class="search-input" type="search" placeholder="Suchen">
+                <div class="navigation-icon-container">
+                    <img src="./icons/home-icon.svg" alt="">
+                    <img src="./icons/messages-icon.svg" alt="">
+                    <img src="./icons/add-icon.svg" alt="">
+                    <img src="./icons/explore-icon.svg" alt="">
+                    <img src="./icons/like-icon.svg" alt="">
+                    <img class="profilepicture" src="./img/kevin-profilepicture.jpeg" alt="">
+                </div>
+            </div>
+        </header>
+
+        <div class="mainpage-container">
+
+            <div class="feed-container">
+                <div class="story-container">
+                    <div><img class="story-pic1" src="./img/gergana-profilepicture.jpeg" alt=""><p>gergana_i</p></div>
+                    <div><img class="story-pic2" src="./img/kris-profilepicture.jpeg" alt=""><p>kristianhuptas</p></div>
+                    <div><img class="story-pic3" src="./img/maurice-profilepicture.jpeg" alt=""><p>mauriice_93</p></div>
+                    <div><img class="story-pic4" src="./img/delong-profilepicture.jpeg" alt=""><p>de_long1801</p></div>
+                    <div><img class="story-pic5" src="./img/nemanja-profilepicture.jpeg" alt=""><p>mitro.pfc</p></div>
+                    <div><img class="story-pic6" src="./img/patrick-profilepicture.jpeg" alt=""><p>patrickm1003</p></div>
+                </div>
+
+                <!-- Wird durch JS gerendert -->
+                <div id="timeline-container">
+        
+                </div>
+            </div>
+
+            <div class="side-container">
+
+                <div class="change-acc-section">
+                    <div class="acc-container">
+                        <div class="acc-picture">
+                            <img src="./img/kevin-profilepicture.jpeg" alt="">
+                        </div>
+                        <div class="name">
+                            <p class="acc-name">keev4493</p>
+                            <p class="profile-name">Kev</p>
+                        </div>
+                    </div>
+
+                    <div class="change-acc">
+                        <a href="#">Wechseln</a>
+                    </div>
+                </div>
+
+                <div class="proposal-section">
+
+                    <div class="proposal-subheadline">
+                        <h2>Vorschläge für dich</h2>
+                        <a href="#">Alle Ansehen</a>
+                    </div>
+
+                    <div class="proposals-container">
+                        <div class="proposal">
+                            <div class="prop-acc-container">
+                                <div class="proposal-picture">
+                                    <img src="./img/prop1-picture.jpeg" alt="">
+                                </div>
+                                <div class="proposal-acc-name">
+                                    <p class="acc-name">kosta_kors</p>
+                                    <p class="profile-name">K O S T A 🇬🇷</p>
+                                </div>
+                            </div>
+                            <div class="prop-link">
+                                <a href="#">Folgen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proposals-container">
+                        <div class="proposal">
+                            <div class="prop-acc-container">
+                                <div class="proposal-picture">
+                                    <img src="./img/prop2-picture.jpeg" alt="">
+                                </div>
+                                <div class="proposal-acc-name">
+                                    <p class="acc-name">nicoleserdarova</p>
+                                    <p class="profile-name">⠀ 𝐍𝐢𝐜𝐨𝐥𝐞🌹</p>
+                                </div>
+                            </div>
+                            <div class="prop-link">
+                                <a href="#">Folgen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proposals-container">
+                        <div class="proposal">
+                            <div class="prop-acc-container">
+                                <div class="proposal-picture">
+                                    <img src="./img/prop3-picture.jpeg" alt="">
+                                </div>
+                                <div class="proposal-acc-name">
+                                    <p class="acc-name">giuse_laguardia</p>
+                                    <p class="profile-name">GIUSE LAGUARDIA</p>
+                                </div>
+                            </div>
+                            <div class="prop-link">
+                                <a href="#">Folgen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proposals-container">
+                        <div class="proposal">
+                            <div class="prop-acc-container">
+                                <div class="proposal-picture">
+                                    <img src="./img/prop4-picture.jpeg" alt="">
+                                </div>
+                                <div class="proposal-acc-name">
+                                    <p class="acc-name">spiegelmagazin</p>
+                                    <p class="profile-name">DER SPIEGEL</p>
+                                </div>
+                            </div>
+                            <div class="prop-link">
+                                <a href="#">Folgen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proposals-container">
+                        <div class="proposal">
+                            <div class="prop-acc-container">
+                                <div class="proposal-picture">
+                                    <img src="./img/prop5-picture.jpeg" alt="">
+                                </div>
+                                <div class="proposal-acc-name">
+                                    <p class="acc-name">k.mbappe</p>
+                                    <p class="profile-name">Kylian Mbappé</p>
+                                </div>
+                            </div>
+                            <div class="prop-link">
+                                <a href="#">Folgen</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
